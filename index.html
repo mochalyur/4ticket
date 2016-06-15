@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>eTicket</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+    
+    <style>
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 180px;
+    }
+
+    .button2 {background-color: #008CBA;} /* Blue */
+    .button3 {background-color: #f44336;} /* Red */
+    .button4 {background-color: #e7e7e7; color: black;} /* Gray */
+    .button5 {background-color: #555555;} /* Black */
+    </style>
+
+</head>
+<div  class="container" style="
+font-size:20px;
+font-family:arial;
+background-image:url(wallpaper.jpg);
+border-style: solid;
+border-width:0px;">
+    
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">eTicket</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><marquee>Welcome to eTicket
+                    <br><small>Book your ticket now</small></marquee>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="kapal.gif" alt="">
+                </a>
+                <h3>
+                    <button class="button button2" id="btnkpl">Kapal</button>
+                    <button class="button button4" id="kpl"><a href="kapal.html">Book Now</a></button>
+                </h3>
+                <p>Lebih nyaman dan aman perjalanan dengan Kapal.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="bus.gif" alt="">
+                </a>
+                <h3>
+                    <button class="button button2" id="btnbus">Bus</button>
+                    <button class="button button4" id="bus"><a href="bus.html">Book Now</a></button> 
+                </h3>
+                </h3>
+                <p>Lebih nyaman dan aman perjalanan dengan Bus.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="kereta.gif" alt="">
+                </a>
+                <h3>
+                    <button class="button button2" id="btnkrt">Kereta</button>
+                    <button class="button button4" id="krt"><a href="kereta.html">Book Now</a></button>
+                    
+                </h3>
+                <p>Lebih nyaman dan aman perjalanan dengan Kereta.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="pesawat.gif" alt="">
+                </a>
+                <h3>
+                    <button class="button button2" id="btnpswt">Pesawat</button>
+                    <button class="button button4" id="pswt"><a href="pesawat.html">Book Now</a></button> 
+                </h3>
+                <p>Lebih nyaman dan aman perjalanan dengan Pesawat.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; eTicket 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+        <script>
+    
+            $(document).ready(function(){
+            
+            $("#btnkpl").click(function(){
+                    $("#kpl").animate({
+                    height: 'toggle',
+                });
+            });
+            $("#btnbus").click(function(){
+                $("#bus").animate({
+                    height: 'toggle',
+                });
+            });
+            
+            $("#btnkrt").click(function(){
+                $("#krt").animate({
+                    height: 'toggle',
+                });
+            });
+            
+            $("#btnpswt").click(function(){
+                $("#pswt").animate({
+                    height: 'toggle',
+                });
+            });
+            
+            
+        });
+    </script>
+</body>
+
+</html>
